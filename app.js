@@ -34,6 +34,10 @@ const osmBuildingsTileset = new Cesium3DTileset({
   url: IonResource.fromAssetId(96188) // Your Cesium OSM Buildings asset ID
 });
 
+const tileset = viewer.scene.primitives.add(
+  await Cesium.Cesium3DTileset.fromIonAssetId(2358501)
+);
+
 viewer.scene.primitives.add(google3DTileset);
 viewer.scene.primitives.add(osmBuildingsTileset);
 
