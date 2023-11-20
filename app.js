@@ -1,5 +1,9 @@
-alert('app.js is loaded');
-color = 'green'
+// Alert to confirm that app.js is loaded
+alert('app.js is successfully loaded.');
+
+// Change the background color of the body for testing
+document.body.style.backgroundColor = 'lightblue';
+
 import { Ion, Viewer, Cesium3DTileset, IonResource, Math as CesiumMath } from 'cesium';
 import { Loader } from '@googlemaps/js-api-loader';
 
