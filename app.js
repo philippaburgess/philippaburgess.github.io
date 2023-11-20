@@ -1,5 +1,5 @@
 alert('app.js is loaded');
-
+color = 'green'
 import { Ion, Viewer, Cesium3DTileset, IonResource, Math as CesiumMath } from 'cesium';
 import { Loader } from '@googlemaps/js-api-loader';
 
