@@ -8,51 +8,17 @@
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet" type="text/css">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwMwi4b-01jZkJhXmFTVoaFzAaz0pizpA"></script>
+  <script type="module" src="app.js"></script>
 </head>
 <title>Port of Long Beach: Sustainability Analysis</title>
 <body>
   <header>
     <h1>Port of Long Beach: Sustainability Analysis</h1>
   <div id="cesiumContainer"></div>
-
-  <script type="module">
-
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ODMwMDg5ZC0wYjJlLTQ2NmEtOTg5Ny1iMzI0NzNjMjU5YjYiLCJpZCI6MTczNDE4LCJpYXQiOjE2OTk4NTI5NDh9.VtT7XV6WVveRJijzrNyZLOsooZ6p14yChusoetLIL54';
-
-    // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
-    const viewer = new Cesium.Viewer('cesiumContainer', {
-      terrain: Cesium.Terrain.fromWorldTerrain(),
-      imageryProvider: false,
-      baseLayerPicker: false,
-      requestRenderMode: true,
-    });    
-
-    viewer.scene.globe.show = false;
-
-    // Define an async function to load the 3D tileset and fly to a location
-    async function loadTilesetAndFly() {
-      const tileset = await Cesium.Cesium3DTileset.fromIonAssetId(2275207);
-      viewer.scene.primitives.add(tileset);
-
-      viewer.camera.flyTo({
-        destination: Cesium.Cartesian3.fromDegrees(-118.2200, 33.7100, 1500),
-        orientation: {
-          heading: Cesium.Math.toRadians(0.0),
-          pitch: Cesium.Math.toRadians(-25.0),
-          roll: 0.0
-        },
-        duration: 2 // Duration in seconds
-      });
-    }
-
-    loadTilesetAndFly();
-  </script>
-  
   <footer>
     <p>Part of the Google Immersive Geospatial Challenge + Cesium Certified Developer Microgrant<br>
     Made with CesiumJS and Google 3D Photorealistic Tiles for USC Spatial Sciences Institute 586: GIS Programming and Customization<br>
     Created by Philippa Burgess</p>
   </footer>
-    <script src="app.js"></script>
 </body>
 </html>
