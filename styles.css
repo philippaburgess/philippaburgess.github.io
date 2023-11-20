@@ -4,6 +4,10 @@ header, footer {
     background-color: #f4f4d8;
 }
 
+footer {
+    font-size: 8px 
+}
+
 #cesiumContainer, #googleMap {
     height: calc(100vh - 120px); /* Adjust the height based on your header/footer size */
     width: 100%;
