@@ -16,7 +16,11 @@
     <h1>Port of Long Beach: Sustainability Analysis</h1>
   <div id="cesiumContainer"></div>
 
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ODMwMDg5ZC0wYjJlLTQ2NmEtOTg5Ny1iMzI0NzNjMjU5YjYiLCJpZCI6MTczNDE4LCJpYXQiOjE2OTk4NTI5NDh9.VtT7XV6WVveRJijzrNyZLOsooZ6p14yChusoetLIL54';
+  <script type="module">
+    // Your access token can be found at: https://ion.cesium.com/tokens.
+    // This is the default access token from your ion account
+
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmZTE0OGI1Ni03MTk3LTQxYzYtYTc3MS1mY2M1ZDFjMzYyYmMiLCJpZCI6MTczNDE4LCJpYXQiOjE2OTgwODUwNDF9.VeJhEdO20c8chc58WWuT3VGj5wiuSLdHqx0I4S7mfss';
 
     // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
     const viewer = new Cesium.Viewer('cesiumContainer', {
@@ -45,7 +49,8 @@
     }
 
     loadTilesetAndFly();
-    
+  </script>
+  
   <footer>
     <p>Part of the Google Immersive Geospatial Challenge + Cesium Certified Developer Microgrant<br>
     Made with CesiumJS and Google 3D Photorealistic Tiles for USC Spatial Sciences Institute 586: GIS Programming and Customization<br>
