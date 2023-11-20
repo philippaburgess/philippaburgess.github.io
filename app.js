@@ -1,10 +1,4 @@
-// Alert to confirm that app.js is successfully loaded
-alert('app.js is successfully loaded.');
-
 import { Ion, Viewer, Cesium3DTileset, IonResource, Math as CesiumMath } from 'cesium';
-
-// Set the default access token for Cesium
-Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ODMwMDg5ZC0wYjJlLTQ2NmEtOTg5Ny1iMzI0NzNjMjU5YjYiLCJpZCI6MTczNDE4LCJpYXQiOjE2OTk4NTI5NDh9.VtT7XV6WVveRJijzrNyZLOsooZ6p14yChusoetLIL54';
 
 // Create a Cesium viewer with appropriate settings
 const viewer = new Viewer('cesiumContainer', {
@@ -20,6 +14,9 @@ const viewer = new Viewer('cesiumContainer', {
   fullscreenButton: false
 });
 
+// Set the default access token for Cesium
+Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ODMwMDg5ZC0wYjJlLTQ2NmEtOTg5Ny1iMzI0NzNjMjU5YjYiLCJpZCI6MTczNDE4LCJpYXQiOjE2OTk4NTI5NDh9.VtT7XV6WVveRJijzrNyZLOsooZ6p14yChusoetLIL54';
+
 // Load the Google Photorealistic 3D Tiles
 Cesium3DTileset.fromIonAssetId(2275207)
   .then(tileset => {
@@ -27,15 +24,6 @@ Cesium3DTileset.fromIonAssetId(2275207)
   })
   .catch(error => {
     console.error("Error loading Google Photorealistic 3D Tiles:", error);
-  });
-
-// Load Cesium OSM Buildings
-Cesium3DTileset.fromIonAssetId(96188)
-  .then(tileset => {
-    viewer.scene.primitives.add(tileset);
-  })
-  .catch(error => {
-    console.error("Error loading Cesium OSM Buildings:", error);
   });
 
 // Fly the camera to the Port of Long Beach
