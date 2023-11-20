@@ -10,7 +10,7 @@ header, footer {
   position: absolute;
   top: 120px; 
   left: 0;
-  bottom: 110px; 
+  bottom: 120px; 
   right: 0;
   z-index: 1;
 }
@@ -29,7 +29,7 @@ header {
   left: 0;
   right: 0;
   z-index: 2;
-  padding: 15px;
+  padding: 20px;
   background-color: #f4f4d8;
 }
 
@@ -41,6 +41,6 @@ footer {
   z-index: 2;
   padding: 10px;
   background-color: #f4f4d8;
-  font-size: 6px; 
+  font-size: 8px; 
   font-family: 'Arial', sans-serif; 
 }
