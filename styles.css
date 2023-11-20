@@ -1,0 +1,52 @@
+header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4d8;
+}
+
+#cesiumContainer, #googleMap {
+    height: calc(100vh - 120px); /* Adjust the height based on your header/footer size */
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    bottom: 120px;
+    right: 0;
+    z-index: 1;
+  }  
+
+/* Additional styles to improve the layout */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 20px;
+    background-color: #f4f4d8;
+  }
+
+#cesiumContainer {
+    flex-grow: 1;
+    .fullsize-container {
+      width: 100%;
+      height: 600px; /* or any other height */
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 10px;
+    background-color: #f4f4d8;
+  }
