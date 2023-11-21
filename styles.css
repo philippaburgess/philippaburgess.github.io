@@ -9,7 +9,7 @@ iframe {
   display: block;
   margin: auto; /* Center horizontally */
   width: 100%; /* Full width */
-  height: 750px; /* New height */
+  height: 100%; /* New height */
   max-height: 100vh; /* Make sure it doesn't overflow the viewport height */
 }
 
