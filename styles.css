@@ -1,64 +1,53 @@
+/* Styles.css content */
 header, footer {
   text-align: center;
-  padding: 5px;
-  height: 20px;
   background-color: #f4f4d8;
+  z-index: 10; /* Ensure it's above other elements */
 }
 
-/* Add this to style the iframe separately */
-
-iframe {
-  display: block;
-  margin: 20px auto 20px; /* Top margin equals header height, bottom margin equals footer height */
-  width: 100%;
-  height: calc(100vh - 40px); 
-  overflow-y: auto; /* Enable vertical scrolling */
-  border: none;
-}
-
-/* Styles for Cesium container and Google Map */
-#cesiumContainer, #googleMap {
-  height: calc(100vh - 40px); /* Adjust the height based on your header/footer size */
-  width: 100%;
-  position: absolute;
-  top: 20px; /* Adjust this value if header height changes */
-  left: 0;
-  bottom: 20px; /* Adjust this value if footer height changes */
-  right: 0;
-  z-index: 0;
-  overflow: hidden; /* Hide overflow to prevent scrollbars on the main container */
-}
-
-/* Global body styles */
-body {
-  margin: 0;
-  padding: 0; /* Added to remove default margin and padding */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden; /* Hide horizontal overflow */
-}
-
-/* Styles for header */
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10; /* Ensure it's above other elements */
-  padding: 5px;
-  background-color: #f4f4d8;
+  height: 60px; /* Adjust based on the content of your header */
+  padding: 10px 0; /* Vertical padding */
 }
 
-/* Styles for footer */
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 10; /* Ensure it's above other elements */
-  padding: 5px;
-  background-color: #f4f4d8;
+  height: 40px; /* Adjust based on the content of your footer */
+  padding: 10px 0; /* Vertical padding */
   font-size: 10px;
   font-family: 'Arial', sans-serif;
+}
+
+iframe {
+  display: block;
+  margin: 60px auto 40px; /* Top and bottom margins match header and footer */
+  width: 100%;
+  height: calc(100vh - 100px); /* Height adjusted for header and footer */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px; /* Top padding matches header height */
+  padding-bottom: 40px; /* Bottom padding matches footer height */
+  min-height: 100vh;
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Ensure that the main container does not create horizontal scroll */
+#cesiumContainer, #googleMap {
+  position: absolute;
+  top: 60px; /* Same as header height */
+  left: 0;
+  right: 0;
+  bottom: 40px; /* Same as footer height */
+  overflow: hidden; /* Hide overflow to prevent scrollbars on the main container */
 }
