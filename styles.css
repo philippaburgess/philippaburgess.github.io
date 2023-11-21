@@ -6,16 +6,16 @@ header, footer {
 }
 
 /* Add this to style the iframe separately */
+
 iframe {
   display: block;
-  margin: 0 auto; /* Center horizontally */
-  width: 100%; /* Full width */
-  height: calc(100vh - 40px);
-  overflow: auto; /* Enable scrolling within the iframe */
-  border: none; /* Remove border */
-  position: relative; /* Make sure it's positioned relative to its container */
+  margin: 20px auto 20px; /* Top margin equals header height, bottom margin equals footer height */
+  width: 100%;
+  height: calc(100vh - 40px); 
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: none;
+ position: relative; /* Make sure it's positioned relative to its container */
   top: 20px; /* Push down by header's height */
-}
 }
 
 /* Styles for Cesium container and Google Map */
