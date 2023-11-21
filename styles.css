@@ -9,9 +9,9 @@ iframe {
   display: block;
   margin: auto; /* Center horizontally */
   width: 100%; /* Full width */
-  height: 800px; /* Set height */
-  overflow: auto; /* Enable scrolling if content is larger than the iframe */
-  border: none; /* Optional: remove border */
+  height: 800px; /* Fixed height */
+  overflow: auto; /* Enable scrolling within the iframe */
+  border: none; /* Remove border */
 }
 
 /* Styles for Cesium container and Google Map */
@@ -24,6 +24,7 @@ iframe {
   bottom: 50px; /* Adjust this value if footer height changes */
   right: 0;
   z-index: 0;
+  overflow: hidden; /* Hide overflow to prevent scrollbars on the main container */
 }
 
 /* Global body styles */
@@ -33,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 /* Styles for header */
@@ -55,6 +57,6 @@ footer {
   z-index: 10; /* Ensure it's above other elements */
   padding: 5px;
   background-color: #f4f4d8;
-  font-size: 10px; 
-  font-family: 'Arial', sans-serif; 
+  font-size: 10px;
+  font-family: 'Arial', sans-serif;
 }
