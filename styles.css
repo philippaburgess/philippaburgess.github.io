@@ -1,8 +1,19 @@
-/* Styles.css content */
+/* Ensure html and body are full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Apply a border-box layout to all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 header, footer {
   text-align: center;
   background-color: #f4f4d8;
-  z-index: 10; /* Ensure it's above other elements */
 }
 
 header {
@@ -10,8 +21,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px; /* Adjust based on the content of your header */
-  padding: 10px 0; /* Vertical padding */
+  height: 60px;
+  padding: 15px 0; /* Adjust padding to center the content */
 }
 
 footer {
@@ -19,35 +30,23 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px; /* Adjust based on the content of your footer */
-  padding: 10px 0; /* Vertical padding */
-  font-size: 10px;
-  font-family: 'Arial', sans-serif;
+  height: 40px;
+  padding: 10px 0; /* Adjust padding to center the content */
 }
 
 iframe {
   display: block;
-  margin: 60px auto 40px; /* Top and bottom margins match header and footer */
   width: 100%;
-  height: calc(100vh - 100px); /* Height adjusted for header and footer */
-  overflow-y: auto; /* Enable vertical scrolling */
-  border: none;
+  height: calc(100vh - 100px); /* Adjusted for header and footer */
+  margin: 60px auto 40px; /* Adjust margins to match header/footer */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
-body {
-  margin: 0;
-  padding-top: 60px; /* Top padding matches header height */
-  padding-bottom: 40px; /* Bottom padding matches footer height */
-  min-height: 100vh;
-  overflow-x: hidden; /* Hide horizontal overflow */
-}
-
-/* Ensure that the main container does not create horizontal scroll */
 #cesiumContainer, #googleMap {
   position: absolute;
-  top: 60px; /* Same as header height */
+  top: 60px;
   left: 0;
   right: 0;
-  bottom: 40px; /* Same as footer height */
-  overflow: hidden; /* Hide overflow to prevent scrollbars on the main container */
+  bottom: 40px;
+  overflow: hidden;
 }
