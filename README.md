@@ -4,6 +4,8 @@ Created by Philippa Burgess
 
 Welcome to my project. This is my official submission for the Google Immersive Geospatial Challenge. 
 
+It can be accessed at: <link href=http://www.philippaburgess.com>www.philippaburgess.com</> 
+
 This project was created with Google 3D Photorealistic Tiles and Cesium Stories.
 
 Other tools:  
