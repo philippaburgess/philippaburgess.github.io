@@ -1,7 +1,7 @@
 header, footer {
   text-align: center;
   padding: 5px;
-  height: 20px;
+  height: 30px;
   background-color: #f4f4d8;
 }
 
@@ -11,14 +11,14 @@ iframe {
   display: block;
   margin: 20px auto 20px; /* Top margin equals header height, bottom margin equals footer height */
   width: 100%;
-  height: calc(100vh - 40px); 
+  height: calc(100vh - 50px); 
   overflow-y: auto; /* Enable vertical scrolling */
   border: none;
 }
 
 /* Styles for Cesium container and Google Map */
 #cesiumContainer, #googleMap {
-  height: calc(100vh - 100px); /* Adjust the height based on your header/footer size */
+  height: calc(100vh - 50px); /* Adjust the height based on your header/footer size */
   width: 100%;
   position: absolute;
   top: 50px; /* Adjust this value if header height changes */
