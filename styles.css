@@ -8,9 +8,9 @@ header, footer {
 /* Add this to style the iframe separately */
 iframe {
   display: block;
-  margin: auto; /* Center horizontally */
+  margin: 0 auto; /* Center horizontally */
   width: 100%; /* Full width */
-  height: 800px; /* Fixed height */
+  height: calc(100vh - 40px);
   overflow: auto; /* Enable scrolling within the iframe */
   border: none; /* Remove border */
 }
