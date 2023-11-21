@@ -21,9 +21,9 @@ iframe {
   height: calc(100vh - 40px); /* Adjust the height based on your header/footer size */
   width: 100%;
   position: absolute;
-  top: 50px; /* Adjust this value if header height changes */
+  top: 20px; /* Adjust this value if header height changes */
   left: 0;
-  bottom: 50px; /* Adjust this value if footer height changes */
+  bottom: 20px; /* Adjust this value if footer height changes */
   right: 0;
   z-index: 0;
   overflow: hidden; /* Hide overflow to prevent scrollbars on the main container */
@@ -41,7 +41,7 @@ body {
 
 /* Styles for header */
 header {
-  position: flexible;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
