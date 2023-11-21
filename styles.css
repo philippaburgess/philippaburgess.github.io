@@ -14,8 +14,6 @@ iframe {
   height: calc(100vh - 40px); 
   overflow-y: auto; /* Enable vertical scrolling */
   border: none;
- position: relative; /* Make sure it's positioned relative to its container */
-  top: 20px; /* Push down by header's height */
 }
 
 /* Styles for Cesium container and Google Map */
