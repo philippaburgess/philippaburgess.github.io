@@ -13,6 +13,9 @@ iframe {
   height: calc(100vh - 40px);
   overflow: auto; /* Enable scrolling within the iframe */
   border: none; /* Remove border */
+  position: relative; /* Make sure it's positioned relative to its container */
+  top: 20px; /* Push down by header's height */
+}
 }
 
 /* Styles for Cesium container and Google Map */
