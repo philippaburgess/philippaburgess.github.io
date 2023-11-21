@@ -8,11 +8,12 @@ This project was created with Google 3D Photorealistic Tiles and Cesium Stories.
 
 Other tools:  
 
-SpeedyMice - Domain URL 
-Cloudflare - Hosting 
-Github Pages - Website 
-ArcGIS Pro & Jupyter Notebooks - Data Processing 
-Google Cloud Console - Storage and APIs 
+SpeedyMice - Domain URL<br> 
+Cloudflare - Content Delivery Network (CDN) and Security Provider <br>
+Github Pages - Website Hosting<br>
+ArcGIS Pro & Jupyter Notebooks - Data Processing<br>
+Google Cloud Console - Storage and APIs<br>
+
 
 --
 
