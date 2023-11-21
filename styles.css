@@ -9,13 +9,14 @@ iframe {
   display: block;
   margin: auto; /* Center horizontally */
   width: 100%; /* Full width */
-  height: 80vh; /* 80% of the viewport height */
-  border: none; /* Remove border */
+  height: 800px; /* Set height */
+  overflow: auto; /* Enable scrolling if content is larger than the iframe */
+  border: none; /* Optional: remove border */
 }
 
 /* Styles for Cesium container and Google Map */
 #cesiumContainer, #googleMap {
-  height: calc(80vh - 100px); /* Adjust the height based on your header/footer size */
+  height: calc(100vh - 100px); /* Adjust the height based on your header/footer size */
   width: 100%;
   position: absolute;
   top: 50px; /* Adjust this value if header height changes */
